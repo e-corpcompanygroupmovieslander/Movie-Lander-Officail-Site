@@ -1,0 +1,214 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: robotto, sans-serif;
+	scroll-behavior: smooth;
+	color: white;
+	transition: 1s;
+	font-size: 20px;
+}
+::-webkit-scrollbar{
+	background: transparent;
+}
+::-webkit-scrollbar-thumb{
+	background: black;
+}
+body{
+	background: #311F68;
+	position: fixed;
+}
+.Desktop{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	background: transparent;
+}
+.Mobile{
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	background: #311F68;
+}
+@media all and (max-width:800px){
+	.Desktop{
+		width: 100%;
+		position: fixed;
+		height: 100%;
+		display: none;
+		overflow: hidden;
+		background: transparent;
+	}
+	.Mobile{
+		width: 100%;
+		position: fixed;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		background: #311F68;
+	}	
+}
+header{
+	width: 100%;
+	background: #708DDA;
+	height: 50px;
+	display: inline-block;
+	position: fixed;
+}
+#Logo{
+	margin-left: 1%;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+#User{
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	right: 0;
+	padding: 10px;
+	top: 0;
+}
+#User1{
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	right: 0;
+	padding: 10px;
+	top: 0;
+	display: none;
+}
+#Main{
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	background:transparent ;
+	top:50px ;
+	right: 0;
+	text-align: center;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-bottom: 10px;
+}
+#Catergories{
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	background: #5B59AD;
+	top:50px ;
+	text-align: center;
+	left: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;	
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+button{
+	position: relative;
+	width: 80%;
+	height:50px ;
+	background-color: #311F68;
+	border: none;
+	margin-top: 1rem;
+	border-radius: 5px;	
+}
+#Menu{
+	position: fixed;
+	background:  #5B59AD;
+	width: 0;
+	top: 50px;
+	right: 0;
+	text-align: center;
+	height: 100%;
+	display: block;
+}
+#copyright{
+	position: relative;
+	top: 10%;
+	font-size: 80%;
+}
+#Account{
+	width: 36px;
+	height: 36px;
+	position: relative;
+}
+#img{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-left: 1rem;
+}
+#AccountDiv{
+	width: 80%;
+	height: auto;
+	background: black;
+	margin-top: 1rem;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#LoginDisplay{
+    position: fixed;
+    background: #311F68;
+    width: 100%;
+    height: 100%;
+	text-align: center;
+    bottom: 0;
+    display: block;
+    left: 0;
+}
+#SplashScreen{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.SplashScreen{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #5C839B;
+	overflow: hidden;
+	display: block;
+}
+label{
+    position: relative;
+    text-align: center;
+    color: white;
+    background: transparent;
+}
+input{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    color: white;
+    background: transparent;
+    border-radius: 20px;
+}
+h1,#UserNameHolder,#EmailHolder{
+    text-align: center;
+    position: relative;
+	font-size: 15px;
+    margin-top: 10px;
+}
+#Title{
+	margin-top: 1.5rem;
+	font-size: 50px;
+}
+#copy{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 10px;
+}
