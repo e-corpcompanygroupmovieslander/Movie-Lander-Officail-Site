@@ -3,9 +3,6 @@ let MenuData='\
 <button onclick="ContactUS()">Contact Us</button>\
 <button onclick="MoreApps()">More Apps</button>\
 <button onclick="Privacy()">Privacy Policy</button>\
-<button ><img id="Account" src="https://drive.google.com/uc?export=download&id=1IZGTyYZB6XLmLuu0_7OTggtYfWquWEbn"></button>\
-<h1 id="UserNameHolder"></h1>\
-<h1 id="EmailHolder"></h1>\
 <h1 id="copyright">&copy;E-corp Company Group</h1>\
 ';
 AboutUs=()=>{
