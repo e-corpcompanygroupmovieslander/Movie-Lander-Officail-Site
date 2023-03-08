@@ -1,6 +1,6 @@
 let NewsLetter='\
 <form action="https://sheetdb.io/api/v1/e2sb8ez0t1kva" id="sheetdb-form" Method="Post" >\
-    <h1>E-corp Company Group</h1>\
+    <h1 id="Title">Movie Lander</h1>\
     <br>\
     <h1>News Letter SignUp</h1>\
     <br>\
@@ -14,6 +14,7 @@ let NewsLetter='\
     <br><br>\
     <button onclick="Login()">Submit</button>\
 </form>\
+<h1 id="copy">&copy;E-corp Company Group</h1>\
 ';
 Login=()=>{
     let UserName=document.querySelector('#UserName').value;
@@ -44,6 +45,10 @@ AutoLogIn=()=>{
     let StoredEmail=localStorage.getItem("MovieLanderEmail",Email);
     if (StoredUsername&&StoredEmail) {
         LoginDisplay.style.display = 'none';
+        let UserNameHolder=document.querySelector('#UserNameHolder');
+        let EmailHolder=document.querySelector('#EmailHolder');
+        UserNameHolder.innerHTML=localStorage.getItem("MovieLanderUsername",UserName);
+        EmailHolder.innerHTML=localStorage.getItem("MovieLanderEmail",Email);
     } else {
         LoginDisplay.style.display = 'block';
     }

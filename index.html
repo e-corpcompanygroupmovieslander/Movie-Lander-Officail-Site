@@ -3,88 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="PageInspect.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Movie Lander</title>
-	<script>
-  // Disable right-click
-document.addEventListener('contextmenu', (e) => e.preventDefault());
-function ctrlShiftKey(e, keyCode) {
-return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
-}
-document.onkeydown = (e) => {
-// Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
-if (
-  event.keyCode === 123 ||
-  ctrlShiftKey(e, 'I') ||
-  ctrlShiftKey(e, 'J') ||
-  ctrlShiftKey(e, 'C') ||
-  (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
-)
-  return false;
-};
-document.onkeydown = function(e) {
-      if (e.ctrlKey && 
-          (e.keyCode === 67 ||
-          e.keyCode === 97 ||
-          e.keyCode === 65 ||
-           e.keyCode === 99 || 
-           e.keyCode === 86 || 
-           e.keyCode === 86 || 
-           e.keyCode === 85 ||
-           e.keyCode === 83 ||
-           e.keyCode === 88 ||
-           e.keyCode === 90 ||
-           e.keyCode === 105 ||
-           e.keyCode === 73 ||
-           e.keyCode === 117)||e.keyCode === 123) {
-          return false;
-      } else {
-          return true;
-      }
-};
-</script>
 </head>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/home.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/catergories.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/Account.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Animation.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Movies.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Series.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/Premiering.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Oldies.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/Login.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/MovieLander/Menu.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/AboutUs.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Kids.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Religious.js"></script>
-<script type="text/javascript" src="https://e-corpcompanygroupmovieslander.github.io/Movie-Lander-/Translated.js"></script>
+<script src="Header.js"></script>
+<script src="Catergories.js"></script>
+<script src="Menu.js"></script>
+<script src="Animation.js"></script>
+<script src="Movies.js"></script>
+<script src="Oldies.js"></script>
+<script src="Religious.js"></script>
+<script src="Kids.js"></script>
+<script src="Series.js"></script>
+<script src="Translated.js"></script>
+<script src="Login.js"></script>
+<script src="home.js"></script>
+<script src="AboutUs.js"></script>
 <body>
-<!----------------------------Header Section--------------------------------------------->
-	<header>
-		<img id="logo-icon" src="https://drive.google.com/uc?export=download&id=11scL3vyCI_TYgruriao0l1ml0yDyRXh9">
-		<img id="menu-icon" src="https://drive.google.com/uc?export=download&id=1NwAxtUiuFkuvZrYIOHBX15ZyCwYbJV1K">
-		<img id="closing-icon" src="https://drive.google.com/uc?export=download&id=1mfTFfKZ6U_nWmWtJxOQHqQA11LIehxLU">
-	</header>
-<!----------------------------main Div--------------------------------------------->
-<div></div>
-<!-----------------------------Footer Section---------------------------------------->
-	<footer>
-		<img id="home-icon" src="https://drive.google.com/uc?export=download&id=12szkVxm2OObz6G6vitv9Lwfwt2TMJbQx">
-		<img id="more-icon" src="https://drive.google.com/uc?export=download&id=1KUM1fPpaJuV2kIWWolXE4Ac4SNSr2LmC">
-		<img id="profile-icon" src="https://drive.google.com/uc?export=download&id=1IZGTyYZB6XLmLuu0_7OTggtYfWquWEbn">
-	</footer>
-<!-----------------------------menu drop down---------------------------------------->
-<div id="menu-dropdown"></div>
-
-<!-----------------------------Log In Section---------------------------------------->
-<div id="LoginDisplay"></div>
-
-<!-----------------------------Splash Screen---------------------------------------->
-<div class="SplashScreen">
-	<img  src="https://drive.google.com/uc?export=download&id=1ir89bC8eTWs_WYPXPC3xy3d4FlAHOq8d" id="SplashScreen">
-	<h1 id="Power">Powdered By Ero Industries</h1>
-</div>
-
+	<div class="Desktop">
+		<header></header>
+		<div id="Main"></div>
+		<div id="Catergories"></div>
+		<div id="Menu"></div>
+		<div id="LoginDisplay"></div>
+	</div>
+	<div class="Mobile"></div>
+	<div class="SplashScreen">
+		<img  src="https://drive.google.com/uc?export=download&id=1ir89bC8eTWs_WYPXPC3xy3d4FlAHOq8d" id="SplashScreen">
+		<h1 id="Power">Powdered By Ero Industries</h1>
+	</div>
 </body>
-	<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>
